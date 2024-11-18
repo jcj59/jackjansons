@@ -9,18 +9,18 @@ const ProjectsWrapper = styled.div`
     background-color: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.text};
     font-family: ${(props) => props.theme.fonts.secondary};
-    min-height: 100vh;
+    // min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    margin-top: 6rem;
+    margin-top: 4rem;
 `;
 
 const Title = styled.h1`
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 400;
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
     font-family: ${(props) => props.theme.fonts.secondary};
 `;
 
@@ -43,13 +43,13 @@ const ProjectCard = styled.div`
     overflow: hidden;
     text-align: center;
     padding: 1rem;
-    width: 500px;
+    width: 400px;
 `;
 
 const ProjectImageLink = styled(Link)`
     display: inline-block; /* Ensures the link takes up the correct dimensions */
     width: 100%; /* Match the width of the image */
-    height: 330px; /* Match the height of the image */
+    height: 260px; /* Match the height of the image */
     margin-bottom: 1rem; /* Add spacing below the image */
     overflow: hidden; /* Ensure the zoom effect doesn't overflow the container */
 `;
@@ -65,13 +65,13 @@ const ProjectImage = styled.img`
     }
 `;
 const ProjectTitle = styled.h2`
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 0rem 0 0.5rem;
     font-family: ${(props) => props.theme.fonts.secondary};
 `;
 
 const ProjectDescription = styled.p`
-    font-size: 1rem;
+    font-size: .9rem;
     line-height: 1.6;
     margin: 0.5rem 0;
 `;
@@ -80,7 +80,7 @@ const LearnMoreLink = styled(Link)`
     font-family: ${(props) => props.theme.fonts.primary};
     font-size: .8rem;
     color: ${(props) => props.theme.colors.hover};
-    margin-top: 1rem;
+    margin-top: 0rem;
     text-decoration: underline;
     text-underline-offset: 4px;
 

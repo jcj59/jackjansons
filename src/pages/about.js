@@ -30,8 +30,8 @@ const ContentWrapper = styled.div`
 `;
 
 const HeadshotWrapper = styled.div`
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%; /* Makes the container circular */
     background-color: ${(props) => props.theme.colors.accent};
     overflow: hidden; /* Ensures the image fits within the circle */
@@ -51,12 +51,12 @@ const TextBlock = styled.div`
     flex: 1;
     max-width: 800px;
     font-family: ${(props) => props.theme.fonts.secondary};
-    font-size: 1rem;
+    font-size: .6rem;
     line-height: 1.8;
     text-align: left;
 
     h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 400;
         margin-bottom: 0rem;
         font-family: ${(props) => props.theme.fonts.secondary};
@@ -64,12 +64,12 @@ const TextBlock = styled.div`
 
     p {
         margin-bottom: 1rem;
-        font-size: 1rem;
+        font-size: .95rem;
     }
 `;
 
 const LinksWrapper = styled.div`
-    margin-top: 1rem;
+    margin-top: 0rem;
     display: flex;
     justify-content: center; /* Center the links horizontally */
     gap: 3rem; /* Space between the links */
