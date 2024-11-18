@@ -26,8 +26,8 @@ const Title = styled.h1`
 
 const ProjectsGrid = styled.div`
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns for a single row */
-    gap: 2rem; /* Spacing between projects */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Automatically adjust columns */
+    gap: 2rem; /* Spacing between research items */
     justify-content: center; /* Center grid items horizontally */
     width: 100%;
     max-width: 1200px;
@@ -43,21 +43,22 @@ const ProjectCard = styled.div`
     overflow: hidden;
     text-align: center;
     padding: 1rem;
-    width: 400px;
+    width: 100%; /* Match the grid's responsive column width */
+    max-width: 400px; /* Limit maximum width */
 `;
 
 const ProjectImageLink = styled(Link)`
     display: inline-block; /* Ensures the link takes up the correct dimensions */
     width: 100%; /* Match the width of the image */
-    height: 260px; /* Match the height of the image */
-    margin-bottom: 1rem; /* Add spacing below the image */
+    margin-bottom: .5rem; /* Add spacing below the image */
     overflow: hidden; /* Ensure the zoom effect doesn't overflow the container */
 `;
 
 const ProjectImage = styled.img`
-    width: 100%; /* Ensure the image fits within the link container */
-    height: 100%;
-    object-fit: cover; /* Maintain aspect ratio while filling the container */
+    width: 100%; /* Image fills the container width */
+    height: auto; /* Maintain aspect ratio */
+    aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
+    object-fit: cover; /* Fill the container without distortion */
     transition: transform 0.3s ease; /* Smooth zoom effect */
 
     &:hover {

@@ -30,8 +30,10 @@ const ContentWrapper = styled.div`
 `;
 
 const HeadshotWrapper = styled.div`
-    width: 400px;
-    height: 400px;
+    width: 100%; /* Default width, will be constrained by max-width */
+    max-width: 400px; /* Maximum size for larger screens */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+    aspect-ratio: 1 / 1; /* Ensures the image remains a circle */
     border-radius: 50%; /* Makes the container circular */
     background-color: ${(props) => props.theme.colors.accent};
     overflow: hidden; /* Ensures the image fits within the circle */
@@ -41,9 +43,13 @@ const HeadshotWrapper = styled.div`
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
     img {
-        width: 100%;
-        height: 100%;
+        width: 100%; /* Scale image to the container width */
+        height: 100%; /* Scale image to the container height */
         object-fit: cover; /* Ensures the image fills the circle proportionally */
+    }
+
+    @media (max-width: 768px) {
+        max-width: 250px; /* Smaller size for mobile screens */
     }
 `;
 
