@@ -9,7 +9,6 @@ const ProjectsWrapper = styled.div`
     background-color: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.text};
     font-family: ${(props) => props.theme.fonts.secondary};
-    // min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,12 +25,12 @@ const Title = styled.h1`
 
 const ProjectsGrid = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Automatically adjust columns */
-    gap: 2rem; /* Spacing between research items */
-    justify-content: center; /* Center grid items horizontally */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
     width: 100%;
     max-width: 1200px;
-    justify-items: center; /* Center items inside each grid cell */
+    justify-items: center;
 `;
 
 
@@ -43,26 +42,26 @@ const ProjectCard = styled.div`
     overflow: hidden;
     text-align: center;
     padding: 1rem;
-    width: 100%; /* Match the grid's responsive column width */
-    max-width: 400px; /* Limit maximum width */
+    width: 100%;
+    max-width: 400px;
 `;
 
 const ProjectImageLink = styled(Link)`
-    display: inline-block; /* Ensures the link takes up the correct dimensions */
-    width: 100%; /* Match the width of the image */
-    margin-bottom: .5rem; /* Add spacing below the image */
-    overflow: hidden; /* Ensure the zoom effect doesn't overflow the container */
+    display: inline-block;
+    width: 100%;
+    margin-bottom: .5rem;
+    overflow: hidden;
 `;
 
 const ProjectImage = styled.img`
-    width: 100%; /* Image fills the container width */
-    height: auto; /* Maintain aspect ratio */
-    aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
-    object-fit: cover; /* Fill the container without distortion */
-    transition: transform 0.3s ease; /* Smooth zoom effect */
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 
     &:hover {
-        transform: scale(1.1); /* Zoom in slightly */
+        transform: scale(1.1);
     }
 `;
 const ProjectTitle = styled.h2`

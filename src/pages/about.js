@@ -12,8 +12,8 @@ const AboutWrapper = styled.div`
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center everything vertically */
-    align-items: center; /* Center everything horizontally */
+    justify-content: center;
+    align-items: center;
 `;
 
 const ContentWrapper = styled.div`
@@ -25,31 +25,31 @@ const ContentWrapper = styled.div`
     gap: 4rem;
 
     @media (max-width: 768px) {
-        flex-direction: column; /* Stack content vertically on small screens */
+        flex-direction: column;
     }
 `;
 
 const HeadshotWrapper = styled.div`
-    width: 100%; /* Default width, will be constrained by max-width */
-    max-width: 400px; /* Maximum size for larger screens */
-    height: auto; /* Automatically adjust height to maintain aspect ratio */
-    aspect-ratio: 1 / 1; /* Ensures the image remains a circle */
-    border-radius: 50%; /* Makes the container circular */
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
     background-color: ${(props) => props.theme.colors.accent};
-    overflow: hidden; /* Ensures the image fits within the circle */
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
     img {
-        width: 100%; /* Scale image to the container width */
-        height: 100%; /* Scale image to the container height */
-        object-fit: cover; /* Ensures the image fills the circle proportionally */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     @media (max-width: 768px) {
-        max-width: 250px; /* Smaller size for mobile screens */
+        max-width: 250px;
     }
 `;
 
@@ -77,8 +77,8 @@ const TextBlock = styled.div`
 const LinksWrapper = styled.div`
     margin-top: 0rem;
     display: flex;
-    justify-content: center; /* Center the links horizontally */
-    gap: 3rem; /* Space between the links */
+    justify-content: center;
+    gap: 3rem;
 
     .link {
         font-family: ${(props) => props.theme.fonts.primary};
@@ -89,7 +89,7 @@ const LinksWrapper = styled.div`
         transition: color 0.3s ease;
 
         &:hover {
-            color: ${(props) => props.theme.colors.hover}; /* Change color on hover */
+            color: ${(props) => props.theme.colors.hover};
         }
     }
 `;
@@ -102,13 +102,13 @@ function About() {
                     <ContentWrapper>
                         <HeadshotWrapper>
                             <img
-                                src={headshot}
+                                src={headshot} alt="Headshot"
                             />
                         </HeadshotWrapper>
                         <TextBlock>
                             <h1>About Me</h1>
                             <p>
-                                Hi, I’m Jack Jansons. I am currently a senior at Cornell University pursuing degrees in Computer Science and Operations Research. An incoming software engineer at Meta in Cambridge, MA, I combine my background in machine learning, optimization, and data science to contribute to artificial intelligence and software development initiatives.
+                                Hi, I’m Jack Jansons. I am currently a senior at Cornell University pursuing degrees in Computer Science and Operations Research. As an incoming software engineer at Meta in Cambridge, MA, I combine my background in machine learning, optimization, and data science to contribute to artificial intelligence and software development initiatives.
                             </p>
                             <p>
                                 I aim to advance meaningful projects and design innovative solutions, and I am driven by being at the forefront of technological developments and seeing the direct impact of my work. I am committed to continuous learning and seek collaborative opportunities that share my values.

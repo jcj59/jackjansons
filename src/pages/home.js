@@ -12,7 +12,7 @@ const HomeWrapper = styled.div`
     background-color: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.text};
     font-family: ${(props) => props.theme.fonts.secondary};
-    min-height: 100vh; /* Ensure it covers the full viewport height */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 `;
@@ -23,9 +23,9 @@ const Section = styled.section`
     justify-content: center;
     align-items: center;
     text-align: center;
-    flex: 1; /* Each section takes equal vertical space */
+    flex: 1;
     padding: 2rem;
-    padding-bottom: 8rem; /* Add extra padding at the top to move content up */
+    padding-bottom: 8rem;
 
     h1 {
         font-family: ${(props) => props.theme.fonts.secondary};
@@ -44,10 +44,10 @@ const Section = styled.section`
     }
 
     .links {
-        margin-top: 3rem; /* Add space above the links */
-        display: flex; /* Use flexbox for horizontal alignment */
-        justify-content: center; /* Center the links horizontally */
-        gap: 4rem; /* Space between the links */
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
     }
 
     .link {
@@ -59,7 +59,7 @@ const Section = styled.section`
         transition: color 0.3s ease;
 
         &:hover {
-            color: ${(props) => props.theme.colors.hover}; /* Change color on hover */
+            color: ${(props) => props.theme.colors.hover};
         }
     }
 

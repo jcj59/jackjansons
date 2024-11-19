@@ -5,48 +5,48 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 const FooterWrapper = styled.footer`
     bottom: 0;
     left: 0;
-    width: 100%; /* Full width */
-    background-color: ${(props) => props.theme.colors.footerBackground}; /* Footer background color */
-    color: ${(props) => props.theme.colors.footerText}; /* Footer text color */
-    padding: 0.5rem 0; /* Add some vertical padding for spacing */
+    width: 100%;
+    background-color: ${(props) => props.theme.colors.footerBackground};
+    color: ${(props) => props.theme.colors.footerText};
+    padding: 0.5rem 0;
     font-family: ${(props) => props.theme.fonts.secondary};
     font-size: 0.8rem;
     font-weight: regular;
     z-index: 1000;
 
-    display: flex; /* Use flexbox to align items horizontally */
-    justify-content: center; /* Center all items horizontally */
-    align-items: center; /* Align items vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    gap: 1rem; /* Add space between the elements */
+    gap: 1rem;
 
     .social-links {
-        display: flex; /* Flexbox for the icons */
-        gap: 0.5rem; /* Space between social icons */
-        font-size: .8rem; /* Adjust icon size */
+        display: flex;
+        gap: 0.5rem;
+        font-size: .8rem;
     }
 
     a {
         color: ${(props) => props.theme.colors.footerText};
         text-decoration: none;
-        font-size: .8rem; /* Adjust icon size */
+        font-size: .8rem;
         font-weight: regular;
 
-        display: inline-flex; /* Align icons with text */
-        align-items: center; /* Center the icons vertically */
+        display: inline-flex;
+        align-items: center;
 
-        svg { /* Target icons directly */
-            vertical-align: middle; /* Ensure vertical alignment */
-            font-size: 1rem; /* Adjust icon size for alignment */
+        svg {
+            vertical-align: middle;
+            font-size: 1rem;
         }
 
         &:hover {
-            color: ${(props) => props.theme.colors.hover}; /* Change color on hover */
+            color: ${(props) => props.theme.colors.hover};
         }
     }
 
     p {
-        margin: 0; /* Remove default margin from paragraph */
+        margin: 0;
     }
 `;
 

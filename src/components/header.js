@@ -6,7 +6,7 @@ import resume from "../assets/resume/jack_jansons_resume.pdf";
 
 const HeaderWrapper = styled.header`
     position: fixed;
-    top: ${(props) => (props.isVisible ? '0' : '-16rem')}; /* Moves out of view */
+    top: ${(props) => (props.isVisible ? '0' : '-16rem')};
     left: 0;
     width: 100%;
     background-color: ${(props) => props.theme.colors.background};
@@ -16,7 +16,7 @@ const HeaderWrapper = styled.header`
     z-index: 1000;
 
     font-family: ${(props) => props.theme.fonts.primary};
-    transition: top 0.5s ease, background-color 0.3s ease; /* Smooth hiding animation */
+    transition: top 0.5s ease, background-color 0.3s ease;
 
     &:hover {
         background-color: ${(props) => props.theme.colors.hoverBackground};
@@ -73,8 +73,8 @@ const HeaderWrapper = styled.header`
 `;
 
 const StyledButton = styled.button`
-    all: unset; /* Reset button styles */
-    cursor: pointer; /* Make it clickable */
+    all: unset;
+    cursor: pointer;
     color: ${(props) => props.theme.colors.text};
     font-size: 0.8rem;
     font-weight: regular;
