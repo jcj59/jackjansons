@@ -1,19 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.cd89a060.js",
+    "main.js": "/static/js/main.b4283f7f.js",
     "static/js/453.3852a453.chunk.js": "/static/js/453.3852a453.chunk.js",
+    "static/media/portfolio_optimization.gif": "/static/media/portfolio_optimization.1cb8a4cf01e915092e4e.gif",
+    "static/media/kmst_animation.gif": "/static/media/kmst_animation.1f606b371b10fef75819.gif",
     "static/media/perfect-pace.PNG": "/static/media/perfect-pace.38453a93c55a171f5157.PNG",
     "static/media/headshot.jpg": "/static/media/headshot.c326f35da8e16a051ecc.jpg",
     "static/media/jack_jansons_resume.pdf": "/static/media/jack_jansons_resume.f0b23c875fb5836622fd.pdf",
     "static/media/fpn-reimplementation.jpg": "/static/media/fpn-reimplementation.2da8daf74667deb15286.jpg",
+    "static/media/lora.PNG": "/static/media/lora.7fd148b5371bbcfa4871.PNG",
+    "static/media/dsm.PNG": "/static/media/dsm.daae9b5b73c41e788aa7.PNG",
     "index.html": "/index.html",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.cd89a060.js.map": "/static/js/main.cd89a060.js.map",
+    "main.b4283f7f.js.map": "/static/js/main.b4283f7f.js.map",
     "453.3852a453.chunk.js.map": "/static/js/453.3852a453.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.cd89a060.js"
+    "static/js/main.b4283f7f.js"
   ]
 }
